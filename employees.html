@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Employees</title>
+<meta charset="UTF-8"/>
+<body>
+
+<h2> Employees </h2>
+<h4> Please select an option: </h4>
+<!--<button onclick="location.href='insert employee.php'">Insert</button>
+<button onclick="location.href='update employee.php'">Update</button>
+<button onclick="location.href='delete employee.php'">Delete</button>
+<button onclick="location.href='retrieve employee.php'">Retrieve History</button>-->
+
+
+<form action="insert employee.php" method="POST">
+	<fieldset><legend><b> Insert a new Employee</b></legend>
+		<div>
+			<label>Name</label>
+			<br/>
+			<input type="text" name="name"/>
+			<br/>
+			<label>Start date(yyyy-mm-dd)</label>
+			<br/>
+			<input type="text" name="date"/>
+			<br/>
+			<label>Supervisor ID</label>
+			<br/>
+			<input type="text" name="supervisor"/>
+			<br/>
+			<label>Position</label>
+			<br/>
+			<input type="text" id="position" name="position"/>
+			<br/>
+			<input type="submit" value="Submit" />
+			<br/>
+		</div>
+	</fieldset>
+</form>
+</br>
+<form action="update employee.php" method="POST">
+	<fieldset><legend><b> Update an existing Employee</b></legend>
+		<div>
+			<label>Employee ID</label>
+			<br/>
+			<input type="text" name="ID"/>
+			<br/>
+			<label>Name</label>
+			<br/>
+			<input type="text" name="name"/>
+			<br/>
+			<label>Start date(yyyy-mm-dd)</label>
+			<br/>
+			<input type="text" name="date"/>
+			<br/>
+			<label>Supervisor ID</label>
+			<br/>
+			<input type="text" name="supervisor"/>
+			<br/>
+			<label>Position</label>
+			<br/>
+			<input type="text" name="position"/>
+			<br/>
+			<input type="submit" value="Submit" />
+			<br/>
+		</div>
+	</fieldset>
+</form>
+</br>
+<form action="delete employee.php" method="POST">
+	<fieldset><legend><b> Delete an existing Employee</b></legend>
+		<div>
+			<label>Employee ID</label>
+			<br/>
+			<input type="text" name="ID"/>
+			<br/>
+			<input type="submit" value="Submit" />
+		</div>
+	</fieldset>
+</form>
+</br>
+<form action="retrieve employee.php" method="POST">
+	<fieldset><legend><b> Retrieve employee service history</b></legend>
+		<div>
+			<label>Employee ID</label>
+			<br/>
+			<input type="text" name="ID"/>
+			<br/>
+			<label>History starting date</label>
+			<br/>
+			<input type="text" name="date"/>
+			<br/>
+			<input type="submit" value="Submit" />
+		</div>
+	</fieldset>
+</form>
+
+</br>
+</br>
+<button onclick="location.href='main.html'">Home</button>
+
+</body>
+</html>
